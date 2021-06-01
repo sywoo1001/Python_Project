@@ -72,7 +72,7 @@ def classify(df):
                     <br>&nbsp;&nbsp;(  ఠ_ఠ)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|| 
                     <br>&nbsp;&nbsp;&nbsp;/ . . . .づ
                     <br>&nbsp;<b>현황 예의주시 필요</b>
-                    <br>=================''' + '<br><고려조치><br>' + add_str)
+                    <br>=================''' + '<br><현 방역수칙><br>' + add_str)
         elif v >= 100:
             add_str = add(k)
             danger.append('''
@@ -85,7 +85,7 @@ def classify(df):
                     <br>&nbsp;&nbsp;&nbsp;/ . . . .づ
                     <br>&nbsp;<b>방역강화 필요</b>
                     <br>=================
-                    ''' + '<br><고려조치><br>' + add_str)
+                    ''' + '<br><현 방역수칙><br>' + add_str)
         else:
             add_str = add(k)
             danger.append('''
@@ -98,7 +98,7 @@ def classify(df):
                     <br>&nbsp;&nbsp;&nbsp;/ . . . .づ
                     <br>&nbsp;<b>현행유지</b>
                     <br>=================
-                    ''' + '<br><고려조치><br>' + add_str)
+                    ''' + '<br><현 방역수칙><br>' + add_str)
     ans = pd.DataFrame(count.items(), columns=['업종', '빈도'])
     ans['위험도'] = danger
     return ans
