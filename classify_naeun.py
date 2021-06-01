@@ -62,17 +62,42 @@ def classify(df):
     rule=[]
     for k,v in zip(count.keys(),count.values()):
             if v > 50 and v < 100:
-                str='주의<br>=========<br><고려 조치>'
                 add_str=add(k)
-                danger.append(str+add_str)
+                danger.append(     '''                    <br>=================
+                    <br>&nbsp;&nbsp;|￣￣￣￣￣￣￣|
+                    <br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>주의</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                    <br>&nbsp;&nbsp;|＿＿＿＿＿＿＿| 
+                    <br>&nbsp;(＼＿＿／)&nbsp;&nbsp;&nbsp;|| 
+                    <br>&nbsp;&nbsp;(  ఠ_ఠ)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|| 
+                    <br>&nbsp;&nbsp;&nbsp;/ . . . .づ
+                    <br>&nbsp;<b>현황 예의주시 필요</b>
+                    <br>================='''+'<br><고려조치><br>'+add_str)
             elif v >= 100:
-                str='위험<br>=========<br><고려 조치>'
                 add_str = add(k)
-                danger.append(str+add_str)
+                danger.append(                    '''
+                    <br>=================
+                    <br>&nbsp;&nbsp;|￣￣￣￣￣￣￣|
+                    <br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>위험</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                    <br>&nbsp;&nbsp;|＿＿＿＿＿＿＿| 
+                    <br>&nbsp;(＼＿＿／)&nbsp;&nbsp;&nbsp;|| 
+                    <br>&nbsp;&nbsp;(▼ 益 ▼)&nbsp;&nbsp;&nbsp;|| 
+                    <br>&nbsp;&nbsp;&nbsp;/ . . . .づ
+                    <br>&nbsp;<b>방역강화 필요</b>
+                    <br>=================
+                    '''+'<br><고려조치><br>'+add_str)
             else:
-                str = '안전<br>=========<br><고려 조치>'
                 add_str = add(k)
-                danger.append(str+add_str)
+                danger.append(                   '''
+                    <br>=================
+                    <br>&nbsp;&nbsp;|￣￣￣￣￣￣￣|
+                    <br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>유지</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                    <br>&nbsp;&nbsp;|＿＿＿＿＿＿＿| 
+                    <br>&nbsp;(＼＿＿／)&nbsp;&nbsp;&nbsp;|| 
+                    <br>&nbsp;&nbsp;(⚆ ͜ʖ ͡⚆)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|| 
+                    <br>&nbsp;&nbsp;&nbsp;/ . . . .づ
+                    <br>&nbsp;<b>현행유지</b>
+                    <br>=================
+                    '''+'<br><고려조치><br>'+add_str)
     ans=pd.DataFrame(count.items(), columns=['업종', '빈도'])
     ans['위험도'] =danger
     return ans
