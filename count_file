@@ -1,0 +1,17 @@
+업종,빈도,위험도
+종교시설,81,주의<br>======<br><고려 조치><br>마스크 착용 의무화<br>음식 섭취 금지 <br>21시 이후 운영 중단<br>시설 면적 4m^2 혹은 8m^2 당 한명으로 인원 제한<br>기타 등등<br>참조:http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=4224
+모임,77,주의<br>======<br><고려 조치><br>마스크 착용 의무화<br>음식 섭취 금지 <br>21시 이후 운영 중단<br>시설 면적 4m^2 혹은 8m^2 당 한명으로 인원 제한<br>기타 등등<br>참조:http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=4224
+직장,178,위험<br>======<br><고려 조치><br>운영제한 및 집합금지<br>참조:http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=4224
+식당/카페,74,주의<br>======<br><고려 조치><br>마스크 착용 의무화<br>음식 섭취 금지 <br>21시 이후 운영 중단<br>시설 면적 4m^2 혹은 8m^2 당 한명으로 인원 제한<br>기타 등등<br>참조:http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=4224
+목욕장업,22,안전<br>======<br>현행유지
+학원,38,안전<br>======<br>현행유지
+상점/마트/백화점,33,안전<br>======<br>현행유지
+병원,67,주의<br>======<br><고려 조치><br>마스크 착용 의무화<br>음식 섭취 금지 <br>21시 이후 운영 중단<br>시설 면적 4m^2 혹은 8m^2 당 한명으로 인원 제한<br>기타 등등<br>참조:http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=4224
+pc방,23,안전<br>======<br>현행유지
+실내체육시설,5,안전<br>======<br>현행유지
+학교,34,안전<br>======<br>현행유지
+노래연습장,13,안전<br>======<br>현행유지
+교통수단,12,안전<br>======<br>현행유지
+놀이공원,1,안전<br>======<br>현행유지
+미용업,3,안전<br>======<br>현행유지
+유흥시설,3,안전<br>======<br>현행유지

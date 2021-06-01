@@ -26,7 +26,7 @@ def craft(f):
         return []
 
 if __name__ == "__main__":
-    os.chdir(r'C:\Users\yhs04\PycharmProjects\t\data')
+    os.chdir(r'.\original_data')
     f_list=os.listdir()
     print(f_list)
 
