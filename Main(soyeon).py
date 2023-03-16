@@ -1,4 +1,4 @@
-from test import loc
+from classifyData_ver2 import loc
 from operator import itemgetter
 loc.sort(key=itemgetter(1)) # 장소유형 횟수에 따라 오름차순 정렬
 
